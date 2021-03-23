@@ -1,0 +1,32 @@
+﻿[PMC Code v5.0.5]|F8||0|Window,2,Fast,0,1,Input,-1,-1,1|1|Macro1
+Groups=开始:1
+1|WinActivate||1|333|WinActivate||Counter-Strike: Global Offensive|||
+2|Continue, Continue, FoundX, FoundY|31, 91, 38, 97, 0xFFFFFF, 0, Fast RGB|1|100|PixelSearch||Window|Play||
+3|If Image/Pixel Found||1|0|If_Statement|||||
+4|Left Move & Click|33, 103 Left, 1|1|10|Click|||||
+5|[End If]|EndIf|1|0|If_Statement|||||
+6|Left Click, Continue, FoundX, FoundY|499, 130, 506, 139, 0xFFFFFF, 0, Fast RGB|1|100|PixelSearch||Window|Mode||
+7|Continue, Continue, FoundX, FoundY|486, 153, 497, 161, 0xFFFFFF, 0, Fast RGB|1|0|PixelSearch||Window|Go||
+8|If Image/Pixel Found||1|0|If_Statement|||||
+9|Left Move & Click|1138, 734 Left, 1|1|10|Click|||||
+10|[End If]|EndIf|1|0|If_Statement|||||
+11|Left Click, Continue, FoundX, FoundY|1022, 38, 1028, 45, 0xFFFFFF, 0, Fast RGB|1|100|PixelSearch||Window|Reconnect||
+12|Move|617, 675, 0|1|10|Click|||||
+13|Left Move & Click|671, 390 Left, Down|1|20|Click|||Accept||
+14|Left Move & Click|671, 390 Left, Up|1|4000|Click|||Accept||
+15|Left Click, Continue, FoundX, FoundY|899, 428, 894, 432, 0xFFFFFF, 0, Fast RGB|1|0|PixelSearch||Window|Matchmaking Failed||
+16|Continue, Continue, FoundX, FoundY|1320, 41, 1325, 48, 0x272727, 0, Fast RGB|1|100|PixelSearch||Window|||
+17|If Image/Pixel Found||1|0|If_Statement|||Exit Explorer||
+18|Left Move & Click|1905, 15 Left, 1|1|10|Click|||||
+19|[End If]|EndIf|1|0|If_Statement|||||
+20|Left Click, Continue, FoundX, FoundY|21, 47, 26, 52, 0xFFFFFF, 0, Fast RGB|1|100|PixelSearch||Window|Shift+Tab||
+21|Left Click, Continue, FoundX, FoundY|855, 443, 863, 452, 0x8BB2D5, 0, Fast RGB|1|100|PixelSearch||Window|Player Reports||
+22|Continue, Continue, FoundX, FoundY|914, 333, 920, 340, 0xE1C111, 0, Fast RGB|1|100|PixelSearch||Window|Cooldown Expired||
+23|If Image/Pixel Found||1|0|If_Statement|||||
+24|Left Move & Click|859, 438 Left, 1|1|10|Click|||||
+25|[End If]|EndIf|1|0|If_Statement|||||
+26|Continue, Continue, FoundX, FoundY|555, 317, 560, 323, 0x979797, 0, Fast RGB|1|100|PixelSearch||Window|Disconnected||
+27|If Image/Pixel Found||1|0|If_Statement|||||
+28|Left Move & Click|893, 437 Left, 1|1|10|Click|||||
+29|[End If]|EndIf|1|0|If_Statement|||||
+
