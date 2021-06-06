@@ -30,7 +30,7 @@ Loop
         Sleep, 10
     }
     CoordMode, Pixel, Window
-    PixelSearch, FoundX, FoundY, 341, 193, 341, 193, 0xFFFFFF, 0, Fast RGB
+    PixelSearch, FoundX, FoundY, 269, 194, 244, 293, 0xFFFFFF, 0, Fast RGB
     If ErrorLevel = 0
     	Click, %FoundX%, %FoundY% Left, 1  ; Mode
     Sleep, 100
@@ -42,7 +42,7 @@ Loop
         Sleep, 10
     }
     CoordMode, Pixel, Window
-    PixelSearch, FoundX, FoundY, 1437, 53, 1446, 63, 0xFFFFFF, 0, Fast RGB
+    PixelSearch, FoundX, FoundY, 144, 53, 1446, 62, 0xFFFFFF, 0, Fast RGB
     If ErrorLevel = 0
     	Click, %FoundX%, %FoundY% Left, 1  ; Reconnect
     Sleep, 100
@@ -53,15 +53,15 @@ Loop
     Click, 944, 648 Left, Up  ; Accept
     Sleep, 4000
     CoordMode, Pixel, Window
-    PixelSearch, FoundX, FoundY, 1251, 602, 1258, 608, 0xFFFFFF, 0, Fast RGB
+    PixelSearch, FoundX, FoundY, 1250, 602, 1258, 608, 0xFFFFFF, 0, Fast RGB
     If ErrorLevel = 0
     	Click, %FoundX%, %FoundY% Left, 1  ; Matchmaking Failed
     CoordMode, Pixel, Window
-    PixelSearch, FoundX, FoundY, 1854, 57, 1863, 67, 0x272727, 0, Fast RGB
+    PixelSearch, FoundX, FoundY, 1854, 58, 1862, 67, 0x272727, 0, Fast RGB
     Sleep, 100
     If ErrorLevel = 0  ; Exit Explorer
     {
-        Click, 1905, 15 Left, 1
+        Click, 1904, 16 Left, 1
         Sleep, 10
     }
     CoordMode, Pixel, Window
@@ -70,7 +70,7 @@ Loop
     	Click, %FoundX%, %FoundY% Left, 1  ; Shift+Tab
     Sleep, 100
     CoordMode, Pixel, Window
-    PixelSearch, FoundX, FoundY, 1202, 623, 1214, 636, 0x8BB2D5, 0, Fast RGB
+    PixelSearch, FoundX, FoundY, 1201, 623, 1214, 636, 0x8BB2D5, 0, Fast RGB
     If ErrorLevel = 0
     	Click, %FoundX%, %FoundY% Left, 1  ; Player Reports
     Sleep, 100
@@ -87,7 +87,7 @@ Loop
     Sleep, 100
     If ErrorLevel = 0
     {
-        Click, 1256, 615 Left, 1
+        Click, 1256, 616 Left, 1
         Sleep, 10
     }
 }
