@@ -30,7 +30,7 @@ Loop
         Sleep, 10
     }
     CoordMode, Pixel, Window
-    PixelSearch, FoundX, FoundY, 269, 194, 244, 293, 0xFFFFFF, 0, Fast RGB
+    PixelSearch, FoundX, FoundY, 310, 180, 320, 200, 0xFFFFFF, 0, Fast RGB
     If ErrorLevel = 0
     	Click, %FoundX%, %FoundY% Left, 1  ; Mode
     Sleep, 100
